@@ -48,7 +48,7 @@ label start:
 
     scene dark side scene 4 #lightning for one sec
 
-    scene dark side scene 3 
+    scene dark side scene 3
 
     scene dark side throne scene
 
