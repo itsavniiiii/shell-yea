@@ -33,6 +33,37 @@ label start:
 
     return
 
-    show soldier
+    scene  bg scene 1
+
+    #they choose light or dark side
+
+
+    #if they choose the dark side v
+    
+    scene dark side scene 1
+
+    scene dark side scene 2
+
+    scene dark side scene 3
+
+    scene dark side scene 4 #lightning for one sec
+
+    scene dark side scene 3 
+
+    scene dark side throne scene
+
+    
+
+    #if they choose the light side v
+
+    scene light side scene 1
+
+    scene light side scene 2
+
+    scene light side scene 3
+
+    scene light side scene 4
+
+
 
 
