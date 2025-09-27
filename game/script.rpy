@@ -3,8 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define g = Character("lilgirl")
-define s = 
+define g = Character("lilGirl")
+define s = Character("soldier")
+define k = Character("goodKing")
+define t = Character("tyrant")
 
 
 # The game starts here.
@@ -63,7 +65,6 @@ label start:
     scene light side scene 3
 
     scene light side scene 4
-
 
 
 
