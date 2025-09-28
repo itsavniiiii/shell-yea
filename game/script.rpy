@@ -96,7 +96,7 @@ label dark:
     The princess is such a fire person bro should be blessed."
 
 
-    scene lightning sleep #lightning flash
+    scene bg lightning sleep #lightning flash
     pause 1.0
     
     scene bg light side scene 5 #kill or not killl 
@@ -162,10 +162,10 @@ label darkSide:
 
     label explain:
         "You say you’re here to offer your services as a priest of Qhuarae."
-        s "We have no use for you here. Turn back or I will remove you from out Lord’s lands myself."	
+        s "We have no use for you here. Turn back or I will remove you from the land of our lord myself."	
         menu: 
             "Run":
-                ump RunFromSolider
+                jump RunFromSolider
             "Draw your sword":
                 jump fight
     label RunFromSoldier:
@@ -230,7 +230,7 @@ label darkSide:
         "You fight. He sees your bleeding shoulder and underestimates you. A deadly mistake."
         "You tear a gash into his thigh and he falls. You stand over him, sword raised." 
         s "No! Please spare me! My sister is very sick! If I die there will be no one to take care of her! You’ll have killed her too!" 
-            Menu:
+            menu:
                 "Spare him":
                     label spare
                 "Kill him":
