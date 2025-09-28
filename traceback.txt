@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 184, in script
+    jump RunFromSolider2
+renpy.script.LabelNotFound: could not find label 'RunFromSolider2'. Did you mean: 'RunFromSoldier2'?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 184, in script
+    jump RunFromSolider2
+  File "renpy/ast.py", line 1928, in execute
+    rv = renpy.game.script.lookup(target)
+         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "renpy/script.py", line 1161, in lookup
+    raise LabelNotFound(original)
+renpy.script.LabelNotFound: could not find label 'RunFromSolider2'. Did you mean: 'RunFromSoldier2'?
+
+macOS-14.4.1-arm64-arm-64bit arm64
+Ren'Py 8.4.1.25072401
+shell yea 1.0
+Sun Sep 28 15:19:18 2025
