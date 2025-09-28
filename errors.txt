@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: expected expression
-    define s =
-               ^
+File "game/script.rpy", line 43: expected end of line
+    play music good castle intro:
+                    ^
+
+File "game/script.rpy", line 46: expected end of line
+    play music seeing the good castle:
+                      ^
+
+File "game/script.rpy", line 91: expected end of line
+    play sound boohoo you failed:
+                      ^
+
+File "game/script.rpy", line 107: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    pause 1.0:
+    ^
+
+File "game/script.rpy", line 123: expected end of line
+    play sound you won:
+                   ^
+
+File "game/script.rpy", line 128: expected end of line
+    play sound boohoo you failed:
+                      ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Sep 28 09:20:15 2025
+Sun Sep 28 12:58:34 2025
