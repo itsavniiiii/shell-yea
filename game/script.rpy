@@ -40,37 +40,37 @@ label start:
 
     #if they choose the dark side v
     
-    scene dark side scene 1
+    scene bg dark side scene 1
 
-    scene dark side scene 2
+    scene bg dark side scene 2
 
-    scene dark side scene 3 
+    scene bg dark side scene 3 
 
-    scene dark side scene 4 #lightning for one sec
+    scene bg dark side scene 4 #lightning for one sec
 
-    scene dark side scene 3
+    scene bg dark side scene 3
 
-    scene dark side throne scene
+    scene bg dark side throne scene
 
     
 
     #if they choose the light side v
 
-    scene light side scene 1 #js show nothing happens
+    scene bg light side scene 1 #js show nothing happens
 
-    scene light side scene 2 #still walking
+    scene bg light side scene 2 #still walking
 
-    scene light side scene 3 
+    scene bg light side scene 3 
     #prist tells king hey i come to offer services and bro says bless 
     #my daughter bc shes sick. he goes looking for daughter 
 
-    scene light side scene 4 
+    scene bg light side scene 4 
     #ends up here and gargoyle starts attacking. priest has to make 
     #decision to stay and call help or run away. if run away go back to scene one. 
     #bros a coward he failed. if call for help then the princess comes and 
     #tells the gargoyle to go away. priest and princess talk and bond
 
-    scene light side scene 5 #girl sleeping and bro sneaking up...he 
+    scene bg light side scene 5 #girl sleeping and bro sneaking up...he 
     #has to bless princess and say can she have long healthy life rid 
     #of sickness etc etc. rbos got a mental debate. kill innocaent child 
     #he bonded with or kill her. even if she dies of sickness hes 
@@ -78,9 +78,9 @@ label start:
 
     scene #lightning flash
     
-    scene light side scene 5 #kill or not killl 
+    scene bg light side scene 5 #kill or not killl 
     
-    scene light side scene 5 #pew pew girl dead IF KILL
+    scene bg light side scene 5 #pew pew girl dead IF KILL
 
     
 
