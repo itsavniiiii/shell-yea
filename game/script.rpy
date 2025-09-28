@@ -135,17 +135,166 @@ label dark:
 
     #if they choose the dark side v
     
+    
+
+label darkSide:  
     scene bg dark side scene 1
+    show s
+    s "Halt! State your business trespasser"
 
-    scene bg dark side scene 2
+    menu:
+        "Draw your sword":
+            jump fight
+        "Explain yourself":
+            jump explain
 
-    scene bg dark side scene 3 
 
-    scene bg dark side scene 4 #lightning for one sec
+    label fight:
+        "You draw your sword"
+        s “You will perish like those before have, those who dared challenge our great king.”
+        “You fight”
+        “The soldier is young, inexperienced, overconfident. You side step his blows, and plunge your sword deep into his chest. He falls.”
+        hide s
+        “He looks younger in death somehow. He had to be eighteen? Nineteen? He couldn’t have a wife or kids to miss him, but did he have a beloved, someone he hoped to marry some day?”
+        “No matter. He was dead now.”
+        jump DarkSideScene2
 
+
+    label explain:
+        “You say you’re here to offer your services as a priest of Qhuarae.”
+        s “We have no use for you here. Turn back or I will remove you from out Lord’s lands myself.”
+	
+        menu: 
+            “Run”
+                Jump RunFromSolider
+            “Draw your sword”
+                jump fight
+ 	
+    label RunFromSoldier:
+        “You turn and flee”
+        scene bg lose
+        return
+
+
+
+
+    label DarkSideScene2:
+        scene bg dark side scene 2
+        show s
+        s “Turn back trespasser or you will meet the same fate as those before you.”
+            menu: 
+                “Run”
+                    jump RunFromSolider2
+                “Draw your sword”
+                    jump fight2
+    label RunFromSoldier2:
+        “You turn and flee”
+        scene bg lose
+        return
+	
+    label fight2:
+        “You draw your sword”
+        s “Very well. You cannot say I did not offer mercy.”
+        “This soldier is older, more experienced. His jabs have none of the unnecessary flourish of the rookie. He actually manages to cut your shoulder, but it is shallow.”
+        “While he is still close you slash across his chest. He falls.”
+        hide s
+        show ds
+        “As you watch his blood drain with light from his eyes, you notice something.”
+        “The wedding band glints in the darkness, splattered with blood.”
+        “You tear your eyes away. It doesn’t matter now.”
+        hide ds
+
+
+ 
     scene bg dark side scene 3
+    show s
+        menu:
+            “Fight”
+                jump fight3
+            “Let him speak”
+                jump LetHimSpeak
+	
+    label fight3:
+        “You lunge forward.”
+        “The soldier stumbles back in surprise. You thrust your sword into his chest. He dies.”
+        hide s
+        show ds
+        pause 1.0
+        hide ds
+        “Your chest heaves, and you’re breathing hard from the battles. You’ve killed three men. You stumble back from the weight of the fact. You killed three people. One barely a man. One married. And one who didn’t even get the chance to defend himself.”
+        “Three lives lost just to kill one more. Wasn’t it enough? Their sacrifices for their King, while misguided, were noble. Shouldn’t it count for something? Shouldn’t it stop here?”
+        jump DarkSideScene4
 
-    scene bg dark side throne scene
 
-   
-return:
+    label LetHimSpeak:
+        s “You have raised your sword against the soldiers of our Lord, and thus you are an enemy of this kingdom.”
+        “He lunges.”
+        “You fight. He sees your bleeding shoulder and underestimates you. A deadly mistake.”
+        “You tear a gash into his thigh and he falls. You stand over him, sword raised.” 
+        s “No! Please spare me! My sister is very sick! If I die there will be no one to take care of her! You’ll have killed her too!” 
+            Menu:
+                “Spare him”
+                    label spare
+                “Kill him”
+                    label kill
+    label spare:
+        “You lower your sword.”
+        pause 0.5
+        “Leave.”
+        s “Thank you—thank you.”
+ 			“The soldier runs away.”
+            hide s
+            “Your chest heaves, and you’re breathing hard from the battles. You’ve killed two men. You stumble back from the weight of the fact. You just killed two people. One barely a man. One married.”
+            “Two lives lost just to kill one more. Wasn’t it enough? Their sacrifices for their King, while misguided, were noble. Shouldn’t it count for something? Shouldn’t it stop here?”
+            scene bg dark side scene 4
+                pause 0.5
+            scene bg dark side scene 3
+                pause 0.5
+                “No. Their deaths will not be in vain. You came to ride their kingdom of this tyrant, and redeem your soul. You even spared one soldier from the bloodshed.”
+            scene bg dark side throne scene
+                show s at left
+                show sc1 at center
+                show sc2 at right
+                s “CHARGE!!”
+                “The soldier you spared ratted you out. The army kills you.”
+                hide s
+                hide sc1
+                hide sc2
+            scene bg lose
+        label kill:
+            “You slash open his chest.”
+            hide s
+            show ds
+            pause 0.5
+            hide ds
+            “Your chest heaves, and you’re breathing hard from the battle—well, battles. You’ve killed three men. You stumble back from the weight of the fact. You killed three people, really four. One barely a man. One married. One with a family to care for. And his sickly sister will be dead soon too.”
+        “Fours lives lost just to kill one more. Wasn’t it enough? Their sacrifices for their King, while misguided, were noble. Shouldn’t it count for something? Shouldn’t it stop here?”
+            jump DarkSideScene4
+
+
+label DarkSideScene4:
+    scene bg dark side scene 4 #lightning for one sec
+        pause 0.5
+    scene bg dark side scene 3
+        pause 0.5
+        “No. Their deaths can not be in vain. You came to rid their kingdom of this tyrant, and redeem your soul. There was no turning back.”
+
+
+    scene bg dark side throne scene	
+    show ek
+    ek “Ah, it seems the gods have sent another champion to slay me. A vain hope.”
+    ek “Sir Xalvador of Lord Rhihdes, Sire Raolin of Lady Cesnos, Lady Topaz of Lord Therdis, I killed them all.”
+    ek “So why dear /’champion’/ do you think you can do what they couldn’t?”
+    ek “What makes you so special that you will be able to even attempt slaying the greatest king of all the land, the greatest warrior on both sides of the sea?” 
+    ek “How dear champion do you plan to slay the greatest—”
+    “You run up and plunge your sword into his chest.”
+    hide ek
+    show dek
+    “The force of the blow tips him over, and he falls, your sword still buried in his chest.”
+    pause 1.0
+    hide dek
+“You’re breathing hard, heart bounding, blood roaring in your ears. Is this what it feels like? How it feels to redeem your own soul? The blood is still wet on your hands, slick like oil. Your legs shake, knees buckling. Your stomach heaves, your tongue goes dry as bile rises in your throat. The room whirls around you, like the sun watching the world spin.You speak to the crowned corpse at your feet.”
+    “I am no champion.”
+    scene bg win
+    return
+
