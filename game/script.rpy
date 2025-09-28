@@ -162,14 +162,12 @@ label darkSide:
 
     label explain:
         "You say you’re here to offer your services as a priest of Qhuarae."
-        s "We have no use for you here. Turn back or I will remove you from out Lord’s lands myself."
-	
+        s "We have no use for you here. Turn back or I will remove you from out Lord’s lands myself."	
         menu: 
-            "Run"
-                Jump RunFromSolider
-            "Draw your sword"
+            "Run":
+                ump RunFromSolider
+            "Draw your sword":
                 jump fight
- 	
     label RunFromSoldier:
         "You turn and flee"
         scene bg lose
@@ -183,9 +181,9 @@ label darkSide:
         show s
         s "Turn back trespasser or you will meet the same fate as those before you."
             menu: 
-                "Run"
+                "Run":
                     jump RunFromSolider2
-                "Draw your sword"
+                "Draw your sword":
                     jump fight2
     label RunFromSoldier2:
         "You turn and flee"
@@ -209,9 +207,9 @@ label darkSide:
     scene bg dark side scene 3
     show s
         menu:
-            "Fight"
+            "Fight":
                 jump fight3
-            "Let him speak"
+            "Let him speak":
                 jump LetHimSpeak
 	
     label fight3:
@@ -233,9 +231,9 @@ label darkSide:
         "You tear a gash into his thigh and he falls. You stand over him, sword raised." 
         s "No! Please spare me! My sister is very sick! If I die there will be no one to take care of her! You’ll have killed her too!" 
             Menu:
-                "Spare him"
+                "Spare him":
                     label spare
-                "Kill him"
+                "Kill him":
                     label kill
     label spare:
         "You lower your sword."
