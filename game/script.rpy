@@ -4,7 +4,12 @@
 # name of the character.
 
 define g = Character("lilgirl")
-define s = 
+define s = Character("soldier")
+define gk = Character("goodDude")
+define dg = Character("lilgirldead")
+define sg = Character("lilgirlsleeping")
+define ek = Character("evilDude")
+define gg = Character("guardgargoyle")
 
 
 # The game starts here.
@@ -31,7 +36,7 @@ label start:
 
     # This ends the game.
 
-    return
+    
 
     scene  bg scene 1
 
@@ -56,13 +61,16 @@ label start:
 
     #if they choose the light side v
 
-    scene bg light side scene 1 #js show nothing happens
+    scene bg light side scene 1 #js show nothing happens 
 
     scene bg light side scene 2 #still walking
 
     scene bg light side scene 3 
-    #prist tells king hey i come to offer services and bro says bless 
+    #priest tells king hey i come to offer services and bro says bless 
     #my daughter bc shes sick. he goes looking for daughter 
+    show good dude at right
+
+    gk "G'day priest. I have use for your services. My daughter is ill. I beg you to bless her. Save her, please."
 
     scene bg light side scene 4 
     #ends up here and gargoyle starts attacking. priest has to make 
@@ -84,8 +92,9 @@ label start:
 
     
 
-    scene #boohoo yu failed
+    scene bg lose #boohoo yu failed
 
 
 
 
+return
