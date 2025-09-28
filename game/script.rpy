@@ -162,7 +162,7 @@ label darkSide:
 
     label explain:
         "You say you’re here to offer your services as a priest of Qhuarae."
-        s "We have no use for you here. Turn back or I will remove you from the land of our lord myself."	
+        s "We have no use for you here. Turn back or I will remove you from the land of our lord myself."
         menu: 
             "Run":
                 jump RunFromSolider
